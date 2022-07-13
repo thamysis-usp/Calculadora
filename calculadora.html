@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>calculadoraImc</title>
+		<meta charset="UTF-8">
+		<script>
+			function calculadora(){
+				var n1, n2, resultado;
+				
+				n1 = document.getElementById("n1").value;
+				n2 = document.getElementById("n2").value;
+				
+				n1 = parseFloat(n1);
+				n2 = parseFloat(n2);
+				
+				resultado = n1 + n2;
+				
+				alert("A soma desses numeros eh: "+ resultado);
+			}
+		</script>
+	
+	</head>
+	<body bgcolor="#fff9ae">	
+		<center>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h1 style="color:#dab600">Calculadora</h1>
+			<br>
+			<form>
+				<label style="color:#6e6e6e" for="n1"><b>Número 1: </b></label>
+				<input style="border-radius: 8px;border-color: #dab600" type="number" id="n1">
+				<br>
+				<br>
+				<label style="color:#6e6e6e" for="n2"><b>Número 2: </b></label>
+				<input style="border-radius: 8px;border-color: #dab600" type="number" id="n2">
+				<br>
+				<br>
+				<br>
+				<br>
+				<input style="color:#ffffff; background: #dab600; height: 5vh; width: 10vw; border-color: #dab600; border-radius: 50px; cursor: pointer;" type="submit" value="Somar" onclick="calculadora();">
+			</form>
+		</center>
+	</body>
+	
+</html>
